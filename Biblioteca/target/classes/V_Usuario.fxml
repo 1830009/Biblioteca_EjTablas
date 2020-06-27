@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.stage.*?>
+
+<Stage xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.app.Controller">
+    <scene>
+        <Scene>
+            <AnchorPane prefHeight="493.0" prefWidth="951.0" style="-fx-background-color: #ffff;">
+                <children>
+                    <Label layoutX="40.0" layoutY="24.0" prefHeight="37.0" prefWidth="205.0" style="-fx-background-color: #9243C0;" text="  Usuarios" textAlignment="RIGHT" textFill="WHITE">
+                        <font>
+                            <Font name="Abyssinica SIL" size="35.0" />
+                        </font>
+                    </Label>
+                    <TableView fx:id="Tabla_Usuario" layoutX="239.0" layoutY="24.0" prefHeight="469.0" prefWidth="712.0" style="-fx-border-color: #9243C0;">
+                        <columns>
+                            <TableColumn fx:id="C_ID" prefWidth="77.0" text="ID" />
+                            <TableColumn fx:id="C_Nombre" prefWidth="187.0" text="Nombre" />
+                            <TableColumn fx:id="C_Apellidos" prefWidth="170.0" text="Apellidos" />
+                            <TableColumn fx:id="C_Correo" prefWidth="152.0" text="Correo" />
+                            <TableColumn fx:id="C_Tel" prefWidth="124.0" text="Telefono" />
+                        </columns>
+                    </TableView>
+                    <Button layoutX="84.0" layoutY="355.0" mnemonicParsing="false" onAction="#B_Agregar" prefHeight="32.0" prefWidth="88.0" style="-fx-background-color: #9243C0;" text="Agregar" textAlignment="CENTER" textFill="WHITE">
+                        <font>
+                            <Font name="System Bold" size="13.0" />
+                        </font></Button>
+                    <Button layoutX="84.0" layoutY="397.0" mnemonicParsing="false" onAction="#B_Eliminar" prefHeight="32.0" prefWidth="88.0" style="-fx-background-color: #9243C0;" text="Eliminar" textAlignment="CENTER" textFill="WHITE">
+                        <font>
+                            <Font name="System Bold" size="13.0" />
+                        </font></Button>
+                    <Button layoutX="84.0" layoutY="441.0" mnemonicParsing="false" onAction="#B_Modificar" prefHeight="32.0" prefWidth="88.0" style="-fx-background-color: #9243C0;" text="Modificar" textAlignment="CENTER" textFill="WHITE">
+                        <font>
+                            <Font name="System Bold" size="13.0" />
+                        </font></Button>
+                    <TextField fx:id="T_ID" layoutX="54.0" layoutY="93.0" promptText="ID" style="-fx-border-color: #9243C0;" />
+                    <TextField fx:id="T_Nombre" layoutX="54.0" layoutY="137.0" promptText="Nombre" style="-fx-border-color: #9243C0;" />
+                    <TextField fx:id="T_Apellido" layoutX="54.0" layoutY="181.0" promptText="Apellido" style="-fx-border-color: #9243C0;" />
+                    <TextField fx:id="T_Correo" layoutX="54.0" layoutY="224.0" promptText="Correo" style="-fx-border-color: #9243C0;" />
+                    <TextField fx:id="T_Tel" layoutX="54.0" layoutY="265.0" promptText="Telefono" style="-fx-border-color: #9243C0;" />
+               <Button fx:id="B_Regresa" layoutY="23.0" mnemonicParsing="false" onAction="#B_Back" prefHeight="31.0" prefWidth="42.0" style="-fx-background-color: #555356; -fx-border-color: #ffff;" text="&lt;" textFill="WHITE">
+                  <font>
+                     <Font name="System Bold" size="19.0" />
+                  </font>
+               </Button>
+                </children>
+            </AnchorPane>
+        </Scene>
+    </scene>
+</Stage>

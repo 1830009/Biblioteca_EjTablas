@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.stage.*?>
+
+<Stage xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.app.BController">
+    <scene>
+        <Scene>
+            <AnchorPane prefHeight="347.0" prefWidth="533.0" style="-fx-background-color: #ffff;">
+                <children>
+                    <Label layoutX="72.0" layoutY="14.0" text="Gestión de Bibliografía">
+                        <font>
+                            <Font name="Abyssinica SIL" size="35.0" />
+                        </font>
+                    </Label>
+               <Button fx:id="B_Libros" layoutX="46.0" layoutY="125.0" mnemonicParsing="false" onAction="#BLibros" prefHeight="40.0" prefWidth="185.0" style="-fx-border-color: #000000; -fx-background-color: #923499;" text="• Libros" textFill="WHITE">
+                  <font>
+                     <Font name="DejaVu Sans Bold" size="18.0" />
+                  </font>
+               </Button>
+                    <Button fx:id="B_Tesis" layoutX="46.0" layoutY="226.0" mnemonicParsing="false" onAction="#BTesis" prefHeight="40.0" prefWidth="185.0" style="-fx-border-color: #000000; -fx-background-color: #923499;" text="• Tesis" textFill="WHITE">
+                        <font>
+                            <Font name="DejaVu Sans Bold" size="18.0" />
+                        </font>
+                    </Button>
+                    <Button fx:id="B_Revista" layoutX="46.0" layoutY="174.0" mnemonicParsing="false" onAction="#BRevista" prefHeight="40.0" prefWidth="185.0" style="-fx-border-color: #000000; -fx-background-color: #923499;" text="• Revista" textFill="WHITE">
+                        <font>
+                            <Font name="DejaVu Sans Bold" size="18.0" />
+                        </font>
+                    </Button>
+                    <Button fx:id="B_Prestamo" layoutX="278.0" layoutY="125.0" mnemonicParsing="false" onAction="#BPrestamo" prefHeight="40.0" prefWidth="185.0" style="-fx-border-color: #000000; -fx-background-color: #923499;" text="• Prestamo" textFill="WHITE">
+                        <font>
+                            <Font name="DejaVu Sans Bold" size="18.0" />
+                        </font>
+                    </Button>
+                    <Button fx:id="B_AdminUsuario" layoutX="278.0" layoutY="179.0" mnemonicParsing="false" onAction="#BUsuario" prefHeight="31.0" prefWidth="185.0" style="-fx-border-color: #000000; -fx-background-color: D1C6D3;" text="• Usuarios">
+                        <font>
+                            <Font name="DejaVu Sans Bold" size="18.0" />
+                        </font>
+                    </Button>
+               <Label layoutX="64.0" layoutY="84.0" text="Administrar:">
+                  <font>
+                     <Font name="Ubuntu Bold" size="26.0" />
+                  </font>
+               </Label>
+                    <Label layoutX="315.0" layoutY="84.0" text="Servicios:">
+                        <font>
+                            <Font name="Ubuntu Bold" size="26.0" />
+                        </font>
+                    </Label>
+               <AnchorPane layoutX="-3.0" layoutY="58.0" prefHeight="15.0" prefWidth="538.0" style="-fx-background-color: #790F83;" />
+
+                </children>
+            </AnchorPane>
+        </Scene>
+    </scene>
+</Stage>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.stage.*?>
+
+<Stage xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.app.Controller">
+    <scene>
+        <Scene>
+            <AnchorPane prefHeight="493.0" prefWidth="951.0" style="-fx-background-color: #ffff;">
+                <children>
+                    <Label layoutX="33.0" layoutY="21.0" prefHeight="37.0" prefWidth="205.0" style="-fx-background-color: #9243C0;" text=" Prestamo" textAlignment="RIGHT" textFill="WHITE">
+                        <font>
+                            <Font name="Abyssinica SIL" size="35.0" />
+                        </font>
+                    </Label>
+                    <TableView fx:id="Tbl_Prestamo" layoutX="232.0" layoutY="21.0" prefHeight="469.0" prefWidth="712.0" style="-fx-border-color: #9243C0;">
+                        <columns>
+                            <TableColumn fx:id="C_PID" prefWidth="77.0" text="ID" />
+                            <TableColumn fx:id="C_PID_Biblio" prefWidth="195.0" text="Tipo" />
+                            <TableColumn fx:id="C_PID_Usuario" prefWidth="214.0" text="Usuario" />
+                            <TableColumn fx:id="C_PFecha" prefWidth="150.0" text="Fecha" />
+                            <TableColumn fx:id="C_PRetardo" prefWidth="73.0" text="Retardo" />
+                        </columns>
+                    </TableView>
+                    <Button layoutX="44.0" layoutY="352.0" mnemonicParsing="false" onAction="#BP_Agregar" prefHeight="32.0" prefWidth="88.0" style="-fx-background-color: #9243C0;" text="Agregar" textAlignment="CENTER" textFill="WHITE">
+                        <font>
+                            <Font name="System Bold" size="13.0" />
+                        </font></Button>
+                    <Button layoutX="44.0" layoutY="394.0" mnemonicParsing="false" onAction="#BP_Eliminar" prefHeight="32.0" prefWidth="88.0" style="-fx-background-color: #9243C0;" text="Eliminar" textAlignment="CENTER" textFill="WHITE">
+                        <font>
+                            <Font name="System Bold" size="13.0" />
+                        </font></Button>
+                    <Button layoutX="44.0" layoutY="438.0" mnemonicParsing="false" onAction="#BP_Modificar" prefHeight="32.0" prefWidth="88.0" style="-fx-background-color: #9243C0;" text="Modificar" textAlignment="CENTER" textFill="WHITE">
+                        <font>
+                            <Font name="System Bold" size="13.0" />
+                        </font></Button>
+                    <TextField fx:id="T_PID" layoutX="14.0" layoutY="90.0" promptText="ID" style="-fx-border-color: #9243C0;" />
+                    <TextField fx:id="T_PTipo" layoutX="14.0" layoutY="134.0" promptText="Tipo" style="-fx-border-color: #9243C0;" />
+                    <TextField fx:id="T_PUsuario" layoutX="14.0" layoutY="178.0" promptText="Usuario" style="-fx-border-color: #9243C0;" />
+                    <TextField fx:id="T_PFecha" layoutX="14.0" layoutY="221.0" promptText="Fecha" style="-fx-border-color: #9243C0;" />
+                    <TextField fx:id="T_PRetardo" layoutX="14.0" layoutY="262.0" promptText="Retardo" style="-fx-border-color: #9243C0;" />
+                    <Button fx:id="B_Regresa" layoutY="19.0" mnemonicParsing="false" onAction="#B_Back" prefHeight="31.0" prefWidth="42.0" style="-fx-background-color: #555356; -fx-border-color: #ffff;" text="&lt;" textFill="WHITE">
+                        <font>
+                            <Font name="System Bold" size="19.0" />
+                        </font>
+                    </Button>
+                </children>
+            </AnchorPane>
+        </Scene>
+    </scene>
+</Stage>

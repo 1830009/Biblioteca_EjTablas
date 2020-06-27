@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.stage.*?>
+
+<Stage xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.app.Controller">
+    <scene>
+        <Scene>
+            <AnchorPane prefHeight="399.0" prefWidth="511.0" style="-fx-background-color: #8A0886;">
+                <children>
+               <ImageView fitHeight="700.0" fitWidth="600.0" layoutX="-1.0" layoutY="3.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@Photos/lib2.jpg" />
+                  </image>
+               </ImageView>
+               <AnchorPane layoutX="12.0" layoutY="50.0" opacity="0.85" prefHeight="82.0" prefWidth="574.0" style="-fx-background-color: #ffff; -fx-border-color: #8A0886;">
+                  <children>
+                     <TextField fx:id="T_Usuario" layoutX="80.0" layoutY="39.0" style="-fx-border-color: #8A0886;" />
+                     <Button fx:id="B_logIn" layoutX="465.0" layoutY="37.0" mnemonicParsing="false" onAction="#B_LogIn" prefHeight="26.0" prefWidth="55.0" style="-fx-background-color: #ffff; -fx-border-color: #8A0886; -fx-border-width: 3;" text="OK">
+                        <font>
+                           <Font name="System Bold" size="13.0" />
+                        </font></Button>
+                     <Label layoutX="132.0" layoutY="14.0" text="Usuario:">
+                        <font>
+                           <Font name="Ubuntu Bold" size="19.0" />
+                        </font></Label>
+                     <Label layoutX="298.0" layoutY="15.0" text="Contraseña:">
+                        <font>
+                           <Font name="Ubuntu Bold" size="19.0" />
+                        </font></Label>
+                     <PasswordField fx:id="T_Pass" layoutX="261.0" layoutY="39.0" style="-fx-border-color: #8A0886;" />
+                  </children>
+               </AnchorPane>
+                    <Label layoutX="-1.0" layoutY="14.0" prefHeight="36.0" prefWidth="600.0" style="-fx-background-color: #8A0886;" text="           Biblioteca UPV" textAlignment="CENTER" textFill="WHITE">
+                        <font>
+                            <Font name="Abyssinica SIL" size="35.0" />
+                        </font>
+                    </Label>
+                </children>
+            </AnchorPane>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.5411764979362488" green="0.0313725508749485" blue="0.5254902243614197" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+        </Scene>
+    </scene>
+</Stage>
